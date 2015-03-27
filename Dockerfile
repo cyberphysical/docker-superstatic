@@ -1,6 +1,6 @@
 FROM node:0.10
 
-RUN npm install -g karma superstatic
+RUN npm install -g bower grunt-cli karma superstatic
 
 
 
