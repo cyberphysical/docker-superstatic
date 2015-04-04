@@ -1,4 +1,4 @@
-FROM node:0.10
+FROM bradrydzewski/node:0.10
 
 RUN npm install -g bower grunt-cli karma superstatic
 
