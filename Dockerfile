@@ -1,9 +1,9 @@
 FROM bradrydzewski/node:0.10
 
-RUN npm install -g bower grunt-cli karma superstatic
+RUN /home/ubuntu/nvm/v0.10.22/bin/npm install -g bower grunt-cli karma superstatic
 
 RUN curl -sLo /usr/local/bin/ep https://github.com/kreuzwerker/envplate/releases/download/v0.0.5/ep-linux && chmod +x /usr/local/bin/ep
-    
+
 WORKDIR /app
 EXPOSE 8080
 
