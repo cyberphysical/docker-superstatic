@@ -1,6 +1,6 @@
-FROM bradrydzewski/node:0.10
+FROM node:0.10
 
-RUN /home/ubuntu/nvm/v0.10.22/bin/npm install -g bower grunt-cli karma superstatic
+RUN npm install -g bower grunt-cli karma superstatic
 
 RUN sudo curl -sLo /usr/local/bin/ep https://github.com/kreuzwerker/envplate/releases/download/v0.0.6/ep-linux && sudo chmod +x /usr/local/bin/ep
 
