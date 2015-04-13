@@ -7,4 +7,4 @@ RUN curl -sLo /usr/local/bin/ep https://github.com/kreuzwerker/envplate/releases
 WORKDIR /app
 EXPOSE 8080
 
-CMD ["/usr/local/bin/ep", "/app/*, /app/assets/*", "--", "/usr/local/bin/superstatic", "--port","8080","--host","0.0.0.0", "--gzip"]
+CMD ["/usr/local/bin/ep", "/app/*", "/app/assets/*", "--", "/usr/local/bin/superstatic", "--port","8080","--host","0.0.0.0", "--gzip"]
